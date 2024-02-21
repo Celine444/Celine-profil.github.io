@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celine's Culinary Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="Images/WhatsApp Image 2024-02-21 at 16.32.21.jpeg" alt="Celine" class="profile-photo">
+            <div class="menu">
+                <a href="#about-me">About Me</a> |
+                <a href="#my-dishes">My Dishes</a> |
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section id="about-me" class="about-me">
+        <h2>About Me</h2>
+        <p>Originally from Lebanon, I am a first-year International Trade and Logistics student at Kedge Business School in Marseille. My goal is to become one of the best chefs for traditional Lebanese food, sharing my culture through cuisine.</p>
+    </section>
+    <section id="my-dishes" class="my-dishes">
+        <h2>My Dishes</h2>
+        <div class="dish-gallery">
+            <div class="dish">
+                <img src="https://chefshamy.com/wp-content/uploads/2016/08/tabouleh-04.jpg" alt="Tabouleh">
+                <p>Tabouleh - A refreshing parsley and bulgur wheat salad.</p>
+            </div>
+            <div class="dish">
+                <img src="https://www.munatycooking.com/wp-content/uploads/2022/04/kibbeh-feature-image.jpg" alt="Kibbeh">
+                <p>Kibbeh - Lebanon's national dish, a savory mix of ground meat and bulgur.</p>
+            </div>
+            <div class="dish">
+                <img src="https://www.themediterraneandish.com/wp-content/uploads/2015/01/How-to-make-hummus-recipe-3.jpg" alt="Hummus">
+                <p>Hummus - A creamy blend of chickpeas, tahini, and lemon juice.</p>
+                <button onclick="window.location.href='https://celine444.github.io/Lebanese-Delights.github.io/';">Learn More About Lebanese Dishes</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Connect with me and join in on my culinary journey.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/celine_assad" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com/in/c%C3%A9line-assaad-049019163/" target="_blank">LinkedIn</a> |
+            <a href="https://www.facebook.com/celine_assad" target="_blank">Facebook</a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.pet-image, .profile-photo');
+            images.forEach(image => {
+                image.addEventListener('click', function() {
+                    this.classList.toggle('enlarged');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
